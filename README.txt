@@ -1,0 +1,1 @@
+A repository for small personal projects or problems I have solved.
