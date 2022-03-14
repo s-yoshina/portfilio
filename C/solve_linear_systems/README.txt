@@ -7,7 +7,7 @@ of the constant value N in the program.
 <Method>
 Using row operations, the augmented matrix created from the linear equations
 inputted by the user is transformed so that the variable side of the matrix
-is a diagonal matrix with only 1s on its diagonal. This will lead to the value
+is a diagonal matrix. This will lead to the value
 of each variable to be on the far right side of the matrix.
 
 <Example operation>
