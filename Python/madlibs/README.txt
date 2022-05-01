@@ -14,7 +14,7 @@ There are three blanks in this example: VERB, ADJECTIVE, and NOUN.
 
 1. Input a noun(s), verb(s), or adjective(s) according the prompt of the program.
 
-    - If the program asks for more than one word, seperate the words using a comma.
+    - If the program asks for more than one word, separate the words using a comma.
 
 2. Once all inputs are done, the program will display the mad lib.
 
