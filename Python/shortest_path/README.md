@@ -5,6 +5,7 @@ the path of the shortest path as an integer and a list, respectively, in a tuple
 If there is no path connecting the starting point and the end point, the program
 returns None. The algorithms used to find the shortest path is breadth-first search
 and Dijkstra's algorithm for an unweighted and weighted path, respectively.
+
 ** The function to find the shortest path will not accept a graph with a node that
 has a value greater than or equal to the number of nodes in the graph or less than 0.
 
