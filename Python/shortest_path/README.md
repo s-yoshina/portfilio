@@ -16,9 +16,9 @@ has a value greater than or equal to the number of nodes in the graph or less th
 
 ![Example 1](https://i.imgur.com/wy7ZHRW.png "Example 1")  
 
-#### Graph object inputs 
+#### Graph object inputs
 
-- num_nodes = 9  
+- n_nodes = 9  
 - edges = [(0, 1, 3), (0, 3, 2), (0, 8, 4), (1, 7, 4), (2, 7, 2), (2, 3, 6),
           (2, 5, 1), (3, 4, 1), (4, 8, 8), (5, 6, 8)]  
 
@@ -27,7 +27,7 @@ has a value greater than or equal to the number of nodes in the graph or less th
 - graph = Graph(n_nodes, edges)      
 - root = 8  
 - target = 7  
-          
+
 #### Output
 
 - (11, [8, 7, 1, 0])  
