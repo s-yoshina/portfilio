@@ -1,5 +1,5 @@
 
-# Checking whether a Graph has Continuous Connection
+# Checking whether a Graph has a Continuous Connection Between Nodes
 
 A function that allows the user to check whether all the nodes in a graph are
 accessible from each other. A Boolean value is returned by the function: True if all
