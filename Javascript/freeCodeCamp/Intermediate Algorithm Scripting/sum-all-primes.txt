@@ -1,0 +1,23 @@
+function isPrime(num, primeNums)
+{
+  for(let i = 0; i < primeNums.length; i++)
+  {
+    if(num % primeNums[i] == 0)return false;
+  }
+  return true;
+}
+
+function sumPrimes(num) {
+  var sum = 0, primeNums = [];
+  for(let i = 2; i <= num; i++)
+  {
+    if(isPrime(i, primeNums))
+    {
+      primeNums.push(i);
+      sum += i;
+    };
+  }
+  return sum;
+}
+
+sumPrimes(977);

@@ -1,0 +1,26 @@
+function pairElement(str) {
+  var arr = [];
+  for(let i = 0; i < str.length; i++)
+  {
+    let tempArr = [str[i]];
+    switch(str[i])
+    {
+      case 'G':
+        tempArr.push('C');
+        break;
+      case 'C':
+        tempArr.push('G');
+        break;
+      case 'A':
+        tempArr.push('T');
+        break;
+      default:
+        tempArr.push('A');
+        break;
+    }
+    arr.push(tempArr);
+  }
+  return arr;
+}
+
+console.log(pairElement("GCG"));

@@ -1,0 +1,23 @@
+function arrayUniqueElements(set1, compareSet)
+{
+  set1.forEach(element => {
+    compareSet.has(element) ? compareSet.delete(element) : compareSet.add(element);
+  });
+  return compareSet;
+}
+
+function diffArray(arr1, arr2) {
+  let uniqueElements1 = new Set(arr1);
+  let uniqueElements2 = new Set(arr2);
+
+  let newArr = null;
+  if(uniqueElements1.size > uniqueElements2.size)
+  {
+    newArr = arrayUniqueElements(uniqueElements2, uniqueElements1);
+  } else 
+  { newArr = arrayUniqueElements(uniqueElements1, uniqueElements2);
+  }
+  return [...newArr];
+}
+
+console.log(diffArray(["andesite", "grass", "dirt", "pink wool", "dead shrub"], ["diorite", "andesite", "grass", "dirt", "dead shrub"]));

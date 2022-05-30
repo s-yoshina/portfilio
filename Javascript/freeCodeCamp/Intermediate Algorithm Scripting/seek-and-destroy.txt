@@ -1,0 +1,15 @@
+function destroyer(arr, ...deleteElements) {
+  let i = 0;
+  while(i < arr.length)
+  {
+    if(deleteElements.find(element => element == arr[i]))
+    {
+      arr.splice(i, 1);
+      continue;
+    };
+    i++;
+  }
+  return arr;
+}
+
+console.log(destroyer([1, 2, 3, 5, 1, 2, 3], 2, 3));

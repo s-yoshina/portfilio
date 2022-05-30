@@ -1,0 +1,10 @@
+function translatePigLatin(str) {
+  if ((/^[aeiou].*/i).test(str))return str + "way";
+  else 
+  {
+    var matches = str.match(/([^aeiou]+)(.*)/i);
+    return matches[2] + matches[1] + "ay";
+  }
+}
+
+console.log(translatePigLatin("glove"));

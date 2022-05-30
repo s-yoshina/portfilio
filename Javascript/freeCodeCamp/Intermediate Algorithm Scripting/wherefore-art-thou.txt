@@ -1,0 +1,12 @@
+function whatIsInAName(collection, source) {
+  var arr = [];
+  // Only change code below this line
+  collection.forEach(obj => {
+    for(const key of Object.keys(source))if(!obj.hasOwnProperty(key) || source[key] != obj[key])return;
+    arr.push(obj);
+  });
+  // Only change code above this line
+  return arr;
+}
+
+whatIsInAName([{ first: "Romeo", last: "Montague" }, { first: "Mercutio", last: null }, { first: "Tybalt", last: "Capulet" }], { last: "Capulet" });

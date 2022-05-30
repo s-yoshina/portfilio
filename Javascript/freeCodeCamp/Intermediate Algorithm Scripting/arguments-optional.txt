@@ -1,0 +1,19 @@
+function isValidArg(args)
+{
+  for(let i = 0; i < args.length; i++)if(!Number.isInteger(args[i]))return false;
+  return true;
+}
+
+function addTogether(...args) 
+{
+  if(!isValidArg(args))return undefined;
+  if(args.length == 1){
+    return function addNum(num){
+      if(!Number.isInteger(num))return undefined;
+      return args[0] + num;
+    }
+  }
+  return args[0] + args[1];
+}
+
+console.log(addTogether(5)(7));

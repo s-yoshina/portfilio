@@ -1,0 +1,12 @@
+function fearNotLetter(str) {
+  var prevLetter = str.charCodeAt(0);
+  for(let i = 1; i < str.length; i++)
+  {
+    let currLetter = str.charCodeAt(i);
+    if(currLetter - prevLetter != 1)return String.fromCharCode(currLetter-1);
+    prevLetter = currLetter;
+  }
+  return undefined;
+}
+
+console.log(fearNotLetter("stvwx"));

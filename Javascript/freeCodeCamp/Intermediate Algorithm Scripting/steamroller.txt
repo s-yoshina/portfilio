@@ -1,0 +1,8 @@
+function steamrollArray(arr, newArr = []) {
+  arr.forEach(element => {
+    Array.isArray(element) ? steamrollArray(element, newArr) : newArr.push(element);
+  });
+  return newArr;
+}
+
+console.log(steamrollArray([[["a"]], [["b"]]]));

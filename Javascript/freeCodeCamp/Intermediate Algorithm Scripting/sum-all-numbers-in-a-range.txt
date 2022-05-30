@@ -1,0 +1,14 @@
+function sumUp(arr) 
+{
+  let sum = 0;
+  for(let i = arr[0]; i <= arr[1]; i++)sum += i;
+  return sum;
+}
+
+function sumAll(arr) {
+  return arr[0] >= arr[1] ? sumUp([arr[1], arr[0]]) :
+         arr[0] < arr[1] ? sumUp(arr) :
+         arr[0]+arr[1];
+}
+
+console.log(sumAll([4, 1]));
